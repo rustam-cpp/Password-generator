@@ -39,4 +39,5 @@ def gen_password(numbers = True,
     password += all_in_list[rand(0, len(all_in_list) - 1)]
   return password
 
+# example:
 print(gen_password(True, True, False, False, [], 8, 9))

@@ -10,7 +10,7 @@ def gen_password(numbers = True,
                  lowercase_letters = True,
                  uppercase_letters = True,
                  special_symbols = True,
-                 by_user = '',
+                 by_user = [''],
                  min_len = 12,
                  max_len = 15):
   all = set()
@@ -38,6 +38,3 @@ def gen_password(numbers = True,
   for i in range(password_len):
     password += all_in_list[rand(0, len(all_in_list) - 1)]
   return password
-
-# example:
-print(gen_password(True, True, False, False, [], 8, 9))
